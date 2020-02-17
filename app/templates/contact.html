@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+
+		{% block main %}
+	
+	
+			<h3>Contact Form</h3>
+			<hr>
+			<p id = "rule">Fill in this form to contact the site owners. </p>
+			
+			<!--p>{{Test}}</p-->
+			<form action="{{ url_for('contact') }}" method="POST" id = "conform">
+				{{ form.csrf_token }}
+					
+					
+					
+					<div class="form-field">{{ form.name.label }} <p class="need"> (Required)</p> 
+						<p>Please enter your full name</p>{{ form.name(size=20) }}
+					</div>
+
+					<div class="form-field">{{ form.email.label }} <p class="need"> (Required)</p>
+					<p>Please enter your e-mail address</p>
+					 {{ form.email }}
+					</div>
+
+
+					<div class="form-field">{{ form.body.label }} <p class="need"> (Required)</p>
+						<p>Please enter the message you would like to send</p>
+					 {{ form.body }}
+					</div>
+					
+					<div class="form-field">{{ form.subject.label }} <p class="need"> (Required)</p>
+					 <p>Please enter the subject for your message</p> {{ form.subject }}
+					</div>
+
+					
+					
+					<input type="submit" id = "enter">
+					<!--{{ form.submit }}-->
+				<!--div>
+					<label for="mail">Email (Required):</label>
+					<input type="email" id="mail" name="email" />
+				</div>
+				<div>
+					<label for="subj">Subject (Required):</label>
+					<input type = "text" id="subj" name="subject"></textarea>
+				</div>
+				<div>
+					<label for="msg">MEssage (Required):</label>
+					<textarea id="msg" name="message"></textarea>
+				</div>
+				<button type="submit">Send</button-->
+					<!--{{ form.submit }}-->
+					<!--button type="submit">Send</button-->
+			</form>
+{% endblock %}

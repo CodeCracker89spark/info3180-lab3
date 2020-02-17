@@ -1,3 +1,25 @@
 body {
     padding-top: 5rem;
 }
+
+#conform{
+	/*text-align: center;*/
+}
+.need{
+	color: red;
+	display: inline;
+}
+
+.form-field{
+	margin-bottom: 22px;
+}
+#rule{
+	color: black;
+}
+
+#enter{
+	border-radius: 12px;
+	background-color: cyan;
+	height: 40px;
+	width: 100px;
+}
