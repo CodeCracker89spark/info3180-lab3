@@ -10,10 +10,10 @@ class ContactForm(FlaskForm):
     name = StringField('Name',validators=[DataRequired()])
     #email = StringField('Email',validators=[DataRequired()])
     email = EmailField("Email",  validators=[InputRequired("Please enter your email address."), Email("Please enter your email address.")])
-    subject = StringField('Subject',validators=[DataRequired(), Length(max=10)])
+    subject = StringField('Subject', validators=[DataRequired(), Length(max=10)])
 
     #body = TextField('Message',validators=[DataRequired()])
-    body = TextAreaField('Message', [
+    body = TextAreaField('Message', render_kw={"rows": 5, "cols": 50},validators= [
         DataRequired()
         ])
    # submit = SubmitField("Send")

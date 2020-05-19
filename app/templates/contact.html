@@ -16,22 +16,22 @@
 					
 					
 					<div class="form-field">{{ form.name.label }} <p class="need"> (Required)</p> 
-						<p>Please enter your full name</p>{{ form.name(size=20) }}
+						<p>Please enter your full name</p>{{ form.name(size=25,class = "field")}}
 					</div>
 
 					<div class="form-field">{{ form.email.label }} <p class="need"> (Required)</p>
 					<p>Please enter your e-mail address</p>
-					 {{ form.email }}
+					 {{ form.email(size = 25,class = "field")}}
 					</div>
 
 
-					<div class="form-field">{{ form.body.label }} <p class="need"> (Required)</p>
+					<div class="form-field" id = >{{ form.body.label }} <p class="need"> (Required)</p>
 						<p>Please enter the message you would like to send</p>
-					 {{ form.body }}
+					 {{ form.body(class ="field") }}
 					</div>
 					
 					<div class="form-field">{{ form.subject.label }} <p class="need"> (Required)</p>
-					 <p>Please enter the subject for your message</p> {{ form.subject }}
+					 <p>Please enter the subject for your message</p> {{ form.subject(class = "field") }}
 					</div>
 
 					

@@ -12,6 +12,13 @@ body {
 
 .form-field{
 	margin-bottom: 22px;
+	
+	
+}
+.field{
+	
+	border-radius: 12px;
+	
 }
 #rule{
 	color: black;
